@@ -46,7 +46,9 @@ export default function Home() {
 
   return (
     <div className="layout-container">
+      
       <main>
+        
         {/* Chat history display */}
         <div ref={chatContainerRef} className="chat-container">
           {chatHistory.map((message, index) => (
