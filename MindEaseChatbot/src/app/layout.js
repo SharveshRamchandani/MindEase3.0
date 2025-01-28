@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"; // Import Analytics
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <Analytics /> {/* Add Analytics component here */}
       </body>
     </html>
   );
