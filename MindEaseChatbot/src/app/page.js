@@ -50,7 +50,7 @@ export default function Home() {
       <main>
         
         {/* Chat history display */}
-        <div ref={chatContainerRef} className="chat-container">
+        <div ref={chatContainerRef} className="chat-container" style={{msOverflowStyle: 'none', scrollbarWidth: 'none', '&::webkit-scrollbar' : {display: 'none'}}} >
           {chatHistory.map((message, index) => (
             <div key={index} className={`chat-bubble ${message.role}`}>
               <p>{message.content}</p>

@@ -50,7 +50,7 @@ main {
 /* Chat container */
 .chat-container {
   height: 85vh;
-  overflow-y: auto;
+  overflow-y: scroll;
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 10px;
