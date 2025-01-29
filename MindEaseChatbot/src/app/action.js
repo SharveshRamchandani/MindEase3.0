@@ -112,6 +112,7 @@ Since it is a child friendly platform u are forbidden to help the user with info
 Do not use any sweet words while comforting the user talk like a general human being
 If asked recipe about a particular dish provide it step by step in pointers
 If asked tamil comedy or hindi comedy of a particular comedian provide it 
+If asked tamil jokes provide it without translation 
       `,
     });
     chatHistory.push({ role: "ai", content: text });
