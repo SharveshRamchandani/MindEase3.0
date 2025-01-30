@@ -2,7 +2,7 @@ import { generateText } from "ai";
 import { createGoogleGenerativeAI } from "@ai-sdk/google";
 
 const google = createGoogleGenerativeAI({
-  apiKey: "AIzaSyBJ7w_R-z_hm8nAkkWvN5BKjmB47P8VMcQ",
+  apiKey: "AIzaSyCh_TBmNtpTu95LBUF2G_gKamSy4tG4kwY",
 });
 
 let chatHistory = [];
