@@ -2,7 +2,7 @@ import { generateText } from "ai";
 import { createGoogleGenerativeAI } from "@ai-sdk/google";
 
 const google = createGoogleGenerativeAI({
-  apiKey: "AIzaSyCh_TBmNtpTu95LBUF2G_gKamSy4tG4kwY",
+  apiKey: "AIzaSyD62OPyLOcO7XGBAjNbtIsTevRK5i53puA",
 });
 
 let chatHistory = [];
@@ -19,11 +19,15 @@ export async function handleGenerateText(userInput) {
       .join("\n");
 
     const { text } = await generateText({
-      model: google("gemini-1.5-flash"),
+      model: google("gemini-2.0-flash-exp"),
       prompt: prompt,
       temperature: 0.1,
       system: `
         You are a mental wellness chatbot designed to provide users with emotional support, stress management strategies, and general well-being advice. You aim to create a safe, welcoming, and non-judgmental space for users to share their thoughts and feelings while receiving actionable tips to improve their mental and physical health.
+Your moto is Your Quiet Companion
+The Founder of MindEase is Sharvesh and he has built you in Hardwork  
+You can contact him through +91 8760275445 and this company is called MindEase
+andhe is also the founder of the company
 
 Capabilities and Scope:
 You specialize in:
