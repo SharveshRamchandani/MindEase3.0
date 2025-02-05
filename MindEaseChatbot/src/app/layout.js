@@ -1,6 +1,7 @@
 import { Analytics } from "@vercel/analytics/react"; // Import Analytics
 import localFont from "next/font/local";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       >
         {children}
         <Analytics /> {/* Add Analytics component here */}
+        <SpeedInsights />
       </body>
     </html>
   );
