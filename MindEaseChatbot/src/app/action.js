@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import { generateText } from "ai";
 import { createGoogleGenerativeAI } from "@ai-sdk/google";
 
